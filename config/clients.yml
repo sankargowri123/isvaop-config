@@ -1,0 +1,28 @@
+# Copyright contributors to the IBM Security Verify Access OIDC Provider Resources project
+clients:
+  - client_id: client_authcode
+    client_secret: "ahwoaor82noawasg"
+    client_name: "PvComBank - Client"
+    enabled: true
+    redirect_uris:
+      - https://isvarp-external.apps.svam.nonprod.pvcombank.io
+    grant_types:
+      - authorization_code
+      - implicit
+      - password
+      - client_credentials
+      - refresh_token
+      - urn:openid:params:grant-type:ciba
+      - urn:ietf:params:oauth:grant-type:jwt-bearer
+    response_types:
+      - code id_token
+      - code token id_token
+      - code
+      - code token
+      - none
+      - code token id_token
+    token_endpoint_auth_method: client_secret_post
+    id_token_signed_response_alg: PS512
+    request_object_signing_alg: ES256
+    require_pushed_authorization_requests: false
+    require_pkce: false

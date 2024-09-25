@@ -1,0 +1,53 @@
+# Copyright contributors to the IBM Security Verify Access OIDC Provider Resources project
+version: 24.06
+server:
+  ssl:
+    key: ks:server_keys/server_key
+    certificate: ks:server_keys/server_cert
+logging:
+  level: debug
+template_macros:
+  user_macros:
+    - name
+    - family_name
+    - given_name
+    - display_name
+  request_macros:
+    - authorization_details
+    - claims
+    - user_code
+    - state
+definition:
+  id: 1
+  name: OIDC Definition
+  pre_mappingrule_id: isvaop_pretoken
+  post_mappingrule_id: isvaop_posttoken
+  grant_types:
+    - authorization_code
+    - implicit
+    - password
+    - client_credentials
+    - refresh_token
+    - urn:openid:params:grant-type:ciba
+    - urn:ietf:params:oauth:grant-type:jwt-bearer
+  base_url: https://isvarp-external.apps.svam.nonprod.pvcombank.io/isvaop
+  token_settings:
+    issuer: https://isvarp-external.apps.svam.nonprod.pvcombank.io
+    signing_alg: RS256
+    signing_keystore: isvaop_signing
+    signing_keylabel: rsakey
+  features:
+    enable_fault_tolerance: false
+    enable_dynamic_registration: true
+    consent_prompt: ALWAYS_PROMPT
+    fapi_compliant: false
+    enforce_par: false
+jwks:
+  signing_keystore: isvaop_signing
+javascript:
+  timeout: 0
+  max_load: 16
+  max_idle_time: 600
+  max_ctx_in_isolate: 60
+  cleanup_frequency: 300
+  use_pool: false

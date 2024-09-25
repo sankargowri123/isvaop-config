@@ -1,0 +1,11 @@
+rules:
+  access_policy:
+    - name: default_policy
+      content: 'configmap:isvaop-access-policies/default_policy.js'
+  mapping:
+    - name: isvaop_pretoken
+      rule_type: javascript
+      content: 'configmap:isvaop-mapping-rules/pretoken.js'
+    - name: isvaop_posttoken
+      rule_type: javascript
+      content: 'configmap:isvaop-mapping-rules/posttoken.js'
