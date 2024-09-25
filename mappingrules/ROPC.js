@@ -1,12 +1,17 @@
 importClass(Packages.com.tivoli.am.fim.trustserver.sts.utilities.IDMappingExtUtils);
 importClass(Packages.com.tivoli.am.fim.trustserver.sts.utilities.OAuthMappingExtUtils);
 importClass(Packages.com.ibm.security.access.user.UserLookupHelper);
+importClass(Packages.com.ibm.security.access.httpclient.HttpClientV2);
+importClass(Packages.com.ibm.security.access.httpclient.HttpResponse);
+importClass(Packages.com.ibm.security.access.httpclient.Parameters);
+importClass(Packages.com.ibm.security.access.httpclient.Headers);
 
 IDMappingExtUtils.traceString("Starting ROPC JS");
 
 var username = stsuu.getContextAttributes().getAttributeValueByName("username");
 var password = stsuu.getContextAttributes().getAttributeValueByName("password");
 
+IDMappingExtUtils.traceString("Username: " + username + "Password: "+ password);
 /**
  * This is an example of how you could verify the username and password with an
  * user registry before the access token is generated, therefore preventing
