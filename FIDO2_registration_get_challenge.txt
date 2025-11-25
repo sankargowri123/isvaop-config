@@ -1,0 +1,40 @@
+curl --location 'https://login-uat.pvcombank.com.vn/mga/sps/apiauthsvc/policy/pvconnect_passkey_registration?username=0345383667' \
+--header 'Cookie: AMWEBJCT!%2Fmga!JSESSIONID=0000Muyb4TUzxZ5_geWc1pD4CZX:0f26c6e1-6402-4e82-9be4-873275b72e02:5a0066b2-ae71-4857-bfb6-1e61fdc0e0ca:68d4227a-8e75-42b4-99cf-9cd27b5527dd:a2d189ad-620b-4959-9b03-20809b58ad35:0511add0-f59a-41a9-bf77-2d40d1874887:86c62c7f-c134-428e-95c7-46b4c8708dd0:0d6b4bb9-7339-4ef0-b01b-62897848c291:278cfa9b-333e-4bc4-8f77-9d0e5a45dae8; IV_JCT=%2Fmga; PVB-INT-S-SESSION-ID=1_2_0_5IxN9j487tRuGKVsKPhv+YIR15P-r+BUejee7Lb9LkZQmnZ6'
+
+{
+    "mechanism": "urn:ibm:security:authentication:asf:mechanism:fido2registration",
+    "stateId": "9PQAolnsUqH6pAWsguxNqzz78IjzYoOErqYwgdHpO37bwWSbEpTpqzdBPTkKY9wTKPSTHOMnyl7rEBQQHRRlBd33605u8xHygJOqIvvRQeL08lAzgpEwbrgCyFtOq0kW",
+    "location": "/mga/sps/apiauthsvc/policy/pvconnect_passkey_registration?StateId=9PQAolnsUqH6pAWsguxNqzz78IjzYoOErqYwgdHpO37bwWSbEpTpqzdBPTkKY9wTKPSTHOMnyl7rEBQQHRRlBd33605u8xHygJOqIvvRQeL08lAzgpEwbrgCyFtOq0kW",
+    "rp": {
+        "id": "login-uat.pvcombank.com.vn",
+        "name": "PVcomBank"
+    },
+    "user": {
+        "id": "2F3s8mWWQJel7tG2wVdnvw",
+        "name": "0345383667",
+        "displayName": "0345383667"
+    },
+    "timeout": 60000000,
+    "challenge": "ztQa5uuJTT5B0O8Im_9coiotR9LyOtm5ns2dYyfE8_Q",
+    "excludeCredentials": [],
+    "extensions": {},
+    "authenticatorSelection": {
+        "requireResidentKey": false,
+        "residentKey": "",
+        "userVerification": "preferred",
+        "authenticatorAttachment": "platform"
+    },
+    "attestation": "direct",
+    "pubKeyCredParams": [
+        {
+            "type": "public-key",
+            "alg": -7
+        },
+        {
+            "type": "public-key",
+            "alg": -257
+        }
+    ],
+    "status": "ok",
+    "errorMessage": ""
+}
