@@ -1,0 +1,5 @@
+POST https://int-rp-uat.apps.svam.nonprod.pvcombank.io/mga/sps/apiauthsvc/policy/PVBGetUserRegistrations?pvb-user-id=0345383667
+
+POST https://int-rp-uat.apps.svam.nonprod.pvcombank.io/mga/sps/apiauthsvc/policy/PVBDeleteUserRegistrations?pvb-user-id=0345383667&relying-party-id=login-uat.pvcombank.com.vn&credential-id=-0LNER_rPvK8HNW1Q3BzYAs
+
+POST https://int-rp-uat.apps.svam.nonprod.pvcombank.io/idp/oauth2/token
