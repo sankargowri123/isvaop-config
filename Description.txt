@@ -3,3 +3,7 @@ POST https://int-rp-uat.apps.svam.nonprod.pvcombank.io/mga/sps/apiauthsvc/policy
 POST https://int-rp-uat.apps.svam.nonprod.pvcombank.io/mga/sps/apiauthsvc/policy/PVBDeleteUserRegistrations?pvb-user-id=0345383667&relying-party-id=login-uat.pvcombank.com.vn&credential-id=-0LNER_rPvK8HNW1Q3BzYAs
 
 POST https://int-rp-uat.apps.svam.nonprod.pvcombank.io/idp/oauth2/token
+
+https://login-uat.pvcombank.com.vn/idp/oauth2/authorize?response_type=code&client_id=mono-client&redirect_uri=http%3A%2F%2Fpvcombank.localhost%3A5500%2Fpkce-testing%2Findex.html&scope=device_register&code_challenge=Eyd9UQt8VJ9_SkiSpPEcLEqd6xD5zlmXyA2N3xhhDQA&code_challenge_method=S256&lang=vi&prompt=login&state=QV5fhhcDNuFP8wdy
+
+0382068525/Pcv@12341
